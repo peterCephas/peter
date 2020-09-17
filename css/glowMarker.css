@@ -1,0 +1,58 @@
+.logoLoaderMarker{
+    margin: 0;
+    padding:0;
+    color:#111;
+    font-size: 7em;
+    position: absolute;
+    top:136px;
+    display: flex;
+}
+.logoLoaderMarker span{
+    display: table-cell;
+    margin: 0;
+    padding:0;
+    animation:animate 2s linear infinite;
+}
+.logoLoaderMarker span:nth-child(1){
+    animation-delay: 0s;
+}
+.logoLoaderMarker span:nth-child(2){
+    animation-delay: 0.25s;
+}
+.logoLoaderMarker span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.logoLoaderMarker span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.logoLoaderMarker span:nth-child(5){
+    animation-delay: 1s;
+}
+.logoLoaderMarker span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.logoLoaderMarker span:nth-child(7){
+    animation-delay: 1.5s;
+}
+.logoLoaderMarker span:nth-child(8){
+    animation-delay: 1.75s;
+}
+@keyframes animate{
+    0%, 100%{
+        color:#fff;
+        text-shadow:0 0 10px#fff,
+                    0 0 20px #fff,
+                    0 0 40px#fff,
+                    0 0 80px #fff,
+                    0 0 120px#fff,
+                    0 0 200px #fff,
+                    0 0 300px#fff,
+                    0 0 400px#fff,
+                    0 0 450px#fff;
+                    
+    }
+    5%, 95%{
+        color:#111;
+        text-shadow:none;
+    }
+}
